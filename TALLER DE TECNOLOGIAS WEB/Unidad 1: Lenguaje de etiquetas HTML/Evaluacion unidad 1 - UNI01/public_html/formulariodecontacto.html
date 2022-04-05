@@ -1,79 +1,48 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>Contacto</title>
+        <title>Empresa - Contacto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <a href="index.html">Volver al sitio principal</a>
-        
+        <nav class="menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="formulariodecontacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
         <h1>Formulario de Contacto</h1>
-        <p>
-            Por favor, ingrese los campos solicitados.
-        </p>
         
-        <form>
-            <label>Nombre completo:</label><br>
-            <input type="text" />
+        <form action="" method="post">
+            <label>Nombre Completo</label><br>
+            <input type="text" name="nombre" required/>
             <br><br>
-            <label>Email</label><br>
-            <input type="text" />
+            <label>Direcci&oacute;n</label><br>
+            <input type="text" name="direccion" required/>
             <br><br>
-            <label>Asunto</label><br>
-            <input type="text" />
+            <label>Rut</label><br>
+            <input type="text" name="rut" required/>
             <br><br>
-            <label>Motivo</label><br>
-            <select>
-                <option>Entrevista</option>
-                <option>Auspicio</option>
-                <option>Fans</option>
+            <label>Fono</label><br>
+            <input type="tel" name="fono" required/>
+            <br><br>
+            <label>Edad</label><br>
+            <input type="number" name="edad" required/>
+            <br><br>
+            <label>Sexo</label><br>
+            <select required name="sexo">
+                <option value="mujer">Femenino</option>
+                <option value="hombre">Masculino</option>
+                <option value="na">No especificado</option>
             </select>
             <br><br>
             <label>Comentario</label><br>
-            <textarea></textarea>
+            <textarea name="comentario" required></textarea>
             <br><br>
-            <input type="button" value="Enviar formulario" />
-        </form>
-        <hr/>
-        <form>
-            <table border="3">
-                <tr>
-                    <td><label>Nombre completo:</label></td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td><label>Email</label></td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td><label>Asunto</label></td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td><label>Motivo</label></td>
-                    <td>
-                        <select>
-                            <option>Entrevista</option>
-                            <option>Auspicio</option>
-                            <option>Fans</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Comentario</label></td>
-                    <td><textarea></textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="Enviar formulario" /></td>
-                </tr>
-            </table>
+            <input type="button" value="Enviar" />
         </form>
     </body>
 </html>
